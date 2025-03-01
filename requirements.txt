@@ -1,6 +1,6 @@
 streamlit
 PyPDF2
-openai
+openai=0.28.0
 numpy
 scikit-learn
 pandas
