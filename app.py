@@ -213,8 +213,8 @@ def process_files(uploaded_files):
     
     for i, uploaded_file in enumerate(uploaded_files):
         file_size = uploaded_file.size / (1024 * 1024)  # Convert to MB
-        if file_size > 5:
-            return None, f"File {uploaded_file.name} exceeds 5MB size limit"
+        if file_size > 11:
+            return None, f"File {uploaded_file.name} exceeds 11MB size limit"
         
         status_text.text(f"Processing {uploaded_file.name} ({i+1}/{len(uploaded_files)})")
         
@@ -354,7 +354,7 @@ def main():
         st.header("Upload Your Documents")
         
         # File uploader
-        uploaded_files = st.file_uploader("Upload PDF files (max 5MB each)", 
+        uploaded_files = st.file_uploader("Upload PDF files (max 11MB each)", 
                                          type="pdf", 
                                          accept_multiple_files=True)
         
