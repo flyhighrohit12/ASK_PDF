@@ -1,9 +1,7 @@
 streamlit
 PyPDF2
-openai=0.28.0
+openai
 numpy
 scikit-learn
 pandas
 tiktoken
-pygments
-mdurl
